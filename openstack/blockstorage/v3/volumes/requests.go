@@ -606,7 +606,7 @@ type ImageMetadataOpts struct {
 // ToImageMetadataMap assembles a request body based on the contents of a
 // ImageMetadataOpts.
 func (opts ImageMetadataOpts) ToImageMetadataMap() (map[string]any, error) {
-	return gophercloud.BuildRequestBody(opts, "os-set_image_metadata")
+	return gophercloud.BuildRequestBody(opts, "os-set_image_metadatax")
 }
 
 // SetImageMetadata will set image metadata on a volume based on the values in ImageMetadataOptsBuilder.
