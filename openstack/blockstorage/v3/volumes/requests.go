@@ -137,7 +137,7 @@ type CreateOpts struct {
 // ToVolumeCreateMap assembles a request body based on the contents of a
 // CreateOpts.
 func (opts CreateOpts) ToVolumeCreateMap() (map[string]any, error) {
-	return gophercloud.BuildRequestBody(opts, "volume")
+	return gophercloud.BuildRequestBody(opts, "volumx")
 }
 
 // Create will create a new Volume based on the values in CreateOpts. To extract
